@@ -1,0 +1,74 @@
+/* border box to tell browser to account for border and padding of the container */
+*, *::before, *::after {
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* set container margin, height, width and color if wanted*/
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(215, 44%, 62%);
+}
+
+.container {
+    width: 500px;
+    max-width: 80%;
+    background-color:white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+/* make answer buttons into list */
+#answerBtn{
+    display: grid;
+    width: 100px;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+/* introduce button styling here */
+.btn {
+    border: 3px solid hsl(0, 43%, 50%);
+    background-color:hsl(24, 100%, 85%); 
+    color: black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+#submit-btn, #back-btn, #clearAll {
+    border: 3px solid grey;
+    background-color:hsl(229, 43%, 50%); 
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    outline: none;
+}
+#paragraph{
+   font-size: 1.5rem;
+}
+
+#start-btn{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}

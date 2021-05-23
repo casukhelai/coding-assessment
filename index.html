@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Javascript Quiz!</title>
+</head>
+
+<!-- want to create a card within a container to hold the quiz -->
+<body>
+    <!-- create a container with a class for CSS -->
+    <div class="container">
+        <div id="timer"></div>
+        <h1 id="header" class="first">JavaScript Coding Challenge</h1>
+            <p id="paragraph" class="first">Test your JavaScript knowledge with this quiz! Keep in mind, for every wrong answer
+                you will be penalized by 10 seconds on the timer!</p>
+        
+
+        <div id="questContain" class="hide">
+            <!-- create question container (id) and want to hide them before the start button is pressed -->
+            <div id="question">Question</div>
+            <!-- create div for answer buttons -->
+            <div id="answerBtn"></div>
+        </div>
+
+        <!-- Create Start button -->
+        <div class="start">
+            <button id="start-btn" class="start-btn btn">Start Quiz!</button>
+        </div>
+
+        <!-- Create end page -->
+        <div id="end" class="hide">
+            <h1>Highscores</h1>
+            <form>
+                <input type="text" id="initials" placeholder="Enter Initials">
+                <input type="submit" id="submit-btn" value="Submit">
+            </form>
+            <ul id="score"></ul>
+            
+        <!-- create Go back button & Clear Highscore  -->
+        <button id="back-btn" class="hide">Go Back</button>
+        <button id="clearAll" class="hide" value="reset">Clear Highscores</button>
+        </div>
+        
+
+    </div>
+    
+
+    
+
+    <!-- create controls -->
+    <!-- create start button with id & class -->
+
+    <script src="script.js"></script>
+</body>
+</html>
+
