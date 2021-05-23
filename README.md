@@ -19,14 +19,14 @@ GitHub repo: https://github.com/casukhelai/coding-assessment
 GitHub IO Webpage: https://casukhelai.github.io/coding-assessment/
 
 ## References
-https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
-https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
-https://www.javatpoint.com/html-interview-questions
-https://www.w3schools.com/js/js_timing.asp
-https://www.w3schools.com/jsref/met_win_clearinterval.asp
-https://www.interviewbit.com/css-interview-questions/
-https://developer.mozilla.org/en-US/docs/Web/CSS/position
-https://www.guru99.com/javascript-interview-questions-answers.html
-https://stackoverflow.com/questions/48572176/how-to-get-the-remaining-time-out-of-setinterval-function/48572318
-https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute
-https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event
+-https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+-https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
+-https://www.javatpoint.com/html-interview-questions
+-https://www.w3schools.com/js/js_timing.asp
+-https://www.w3schools.com/jsref/met_win_clearinterval.asp
+-https://www.interviewbit.com/css-interview-questions/
+-https://developer.mozilla.org/en-US/docs/Web/CSS/position
+-https://www.guru99.com/javascript-interview-questions-answers.html
+-https://stackoverflow.com/questions/48572176/how-to-get-the-remaining-time-out-of-setinterval-function/48572318
+-https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute
+-https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event
