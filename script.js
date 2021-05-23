@@ -30,11 +30,8 @@ let shuffleQuest, currentQuestionIndex;
 startButton.addEventListener('click', gamePlay);
 
 let startTime = 60;
+
 // create functions first
-
-//check example of clear timer
-
-
 function gamePlay() {
     function myTimer() {
 
@@ -47,27 +44,14 @@ function gamePlay() {
             questionContainer.classList.add('hide');
 
             saveScore();
-            // not taking away the text
-            // timer.classList.add('hide');
 
           } else {
             startTime = startTime-1;
             document.querySelector("#timer").innerHTML = startTime;
-            //stop the timer
-            // clearInterval(timer);
-            // store as score = startTimer
-          }
-     
-          
+          } 
     }
     let timer = setInterval(myTimer, 1000);
-    // console.log(timer);
     
-
-    // let store score = timer
-    // let score = timer;
-    
-
     // hides start button, header, and paragraph once start is clicked
     startButton.classList.add('hide');
     headerRemove.classList.add('hide');
@@ -83,26 +67,26 @@ function gamePlay() {
 
     // sets next question
     nextQuestion();
-    // console.log("game started");
 }
 
 function nextQuestion() {
     showQuest(shuffleQuest[currentQuestionIndex]);
-    currentQuestionIndex++;
-    
+    currentQuestionIndex++;  
 }
 
 function showQuest(question) {
+    // this empties out previous answer btns
     questionDiv.innerHTML = ''; 
-    answerButtons.innerHTML = ''; // this empties out previous answer btns
+    answerButtons.innerHTML = ''; 
 
     if(currentQuestionIndex >= questions.length){
         // once questions are done, then we need to STORE the remaining time as the SCORE
-        //localStorage.getItem('recentScore');
+        // localStorage.getItem('recentScore');
         highScore.classList.remove('hide');
         goBack.classList.remove('hide');
         clearScores.classList.remove('hide');
         questionContainer.classList.add('hide');
+
         clearInterval(timer);
         let finalTime = timer;
         // console.log actually logged the time...need to pull this
@@ -118,9 +102,9 @@ function showQuest(question) {
             button.classList.add('btn');
             button.setAttribute("isCorrect", answer.correct);
             if(answer.correct){
-                
                 button.dataset.correct = answer.correct; 
             }
+
             button.addEventListener('click', answerSelect);
             answerButtons.appendChild(button);
         })
@@ -141,7 +125,6 @@ function answerSelect(event) {
     nextQuestion();
 }
 
-
 function saveScore(recentScore) {
     // call the remaining time AFTER it is stopped and allocate to score
     console.log(recentScore);
@@ -158,7 +141,6 @@ function saveScore(recentScore) {
     console.log("score");
     // sets to local storage so when user refreshes, the array stays
     localStorage.setItem('highScores', JSON.stringify(highScores));
-    
 };
 
 let questions = [
